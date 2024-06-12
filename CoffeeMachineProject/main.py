@@ -74,7 +74,7 @@ while more_drinks:
         if change < 0:
             print(f"You did not give enough money. You are short: {change}")
         elif not has_enough_ingredients(beverage["ingredients"], resources):
-            print("There is not enough ingredients to make the {option}. Sorry.")
+            print(f"There is not enough ingredients to make the {option}. Sorry.")
         else:
             total_money += beverage["cost"]
             print(f"You have ${change} in change.")
